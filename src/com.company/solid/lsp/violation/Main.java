@@ -1,4 +1,4 @@
-package com.company.solid.liskov.bad;
+package com.company.solid.lsp.violation;
 
 
 public class Main {

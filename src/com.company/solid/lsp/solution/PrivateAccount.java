@@ -1,4 +1,4 @@
-package com.company.solid.liskov.good;
+package com.company.solid.lsp.solution;
 
 public class PrivateAccount extends AbstractCurrentAccount {
 
