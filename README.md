@@ -1,2 +1,4 @@
 # design-patterns
-The repo contains examples of Design Patterns and Clean Code principles  
+The repo contains examples of Design Patterns and Clean Code principles:
+* SOLID
+* Strategy Pattern
