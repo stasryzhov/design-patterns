@@ -1,4 +1,4 @@
-package factory_method;
+package com.company.factory_method;
 
 public class Margherita implements Pizza {
 
