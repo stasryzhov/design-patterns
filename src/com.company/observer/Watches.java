@@ -9,7 +9,7 @@ public class Watches implements Display, Observer {
   }
 
   @Override
-  public void update(float temperature, float humidity) {
+  public void getUpdate(float temperature, float humidity) {
     this.temperature = temperature;
     display();
   }

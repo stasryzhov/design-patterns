@@ -15,7 +15,7 @@ public class WeatherData implements DataSource {
 
   @Override
   public void notifyObservers() {
-    this.observers.forEach(observer -> observer.update(temperature, humidity));
+    this.observers.forEach(observer -> observer.getUpdate(temperature, humidity));
   }
 
   @Override
