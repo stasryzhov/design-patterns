@@ -10,7 +10,7 @@ public class TV implements Display, Observer {
   }
 
   @Override
-  public void update(float temperature, float humidity, float pressure) {
+  public void update(float temperature, float humidity) {
     this.temperature = temperature;
     this.humidity = humidity;
     display();

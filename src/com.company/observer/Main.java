@@ -9,7 +9,7 @@ public class Main {
     Display tv = new TV(weatherData);
     Display watches = new Watches(weatherData);
 
-    weatherData.setMeasurements(25, 75, 1000);
-    weatherData.setMeasurements(30, 100, 900);
+    weatherData.setMeasurements(25, 75);
+    weatherData.setMeasurements(30, 100);
   }
 }

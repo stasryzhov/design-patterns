@@ -8,7 +8,6 @@ public class WeatherData implements DataSource {
   private final List<Observer> observers;
   private float temperature;
   private float humidity;
-  private float pressure;
 
   public WeatherData() {
     this.observers = new ArrayList<>();
@@ -16,7 +15,7 @@ public class WeatherData implements DataSource {
 
   @Override
   public void notifyObservers() {
-    this.observers.forEach(observer -> observer.update(temperature, humidity, pressure));
+    this.observers.forEach(observer -> observer.update(temperature, humidity));
   }
 
   @Override
@@ -24,15 +23,9 @@ public class WeatherData implements DataSource {
     this.observers.add(observer);
   }
 
-  @Override
-  public void removeObserver(Observer observer) {
-    observers.remove(observer);
-  }
-
-  public void setMeasurements(float temp, float humidity, float pressure) {
+  public void setMeasurements(float temp, float humidity) {
     this.temperature = temp;
     this.humidity = humidity;
-    this.pressure = pressure;
     notifyObservers();
   }
 }
